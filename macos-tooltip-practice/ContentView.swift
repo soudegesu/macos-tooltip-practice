@@ -9,8 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
+      VStack {
+        Button("button", action: {
+          
+        }).help("This is tooltip on macOS")
+      }.frame(width: 480, height: 360, alignment: .center)
     }
 }
 
