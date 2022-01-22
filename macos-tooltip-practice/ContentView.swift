@@ -9,10 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-      VStack {
-        Button("button", action: {
+      VStack(spacing: 30) {
+        Button("button1", action: {
           
-        }).help("This is tooltip on macOS")
+        })
+        .help("This is tooltip on macOS")
+        Button("button2", action: {
+          
+        }).toolTip("This is custom tooltip")
       }.frame(width: 480, height: 360, alignment: .center)
     }
 }
